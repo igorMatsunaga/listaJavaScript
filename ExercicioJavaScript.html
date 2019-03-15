@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>Exercicios Java Script</title>
+    <style type="text/css">
+    <!--
+    .fundo{
+        background-color: red;
+    }
+    .fundo1{
+        background-color: green;
+    }
+    .fundo2{
+        background-color: blue;
+    }
+    .fundo3{
+        background-color: yellow;
+    }
+    .fundo4{
+        background-color: white;
+    }
+    -->
+    </style>
+    <script language="javascript" type="text/javascript">
+    
+    function trocar(){
+    var obj = document.getElementById("body");
+    if(obj.className!="fundo"){
+        obj.className='fundo';
+
+    }else{
+        obj.className="fundo4";
+    }
+}
+    function trocar1(){
+        var obj = document.getElementById("body");
+    if(obj.className!="fundo1"){
+        obj.className='fundo1';
+
+    }else{
+        obj.className="fundo4";
+    }
+
+    }
+
+    function trocar2(){
+        var obj = document.getElementById("body");
+    if(obj.className!="fundo2"){
+        obj.className='fundo2';
+
+    }else{
+        obj.className="fundo4";
+    }
+
+    }
+
+    function trocar3(){
+        var obj = document.getElementById("body");
+    if(obj.className!="fundo3"){
+        obj.className='fundo3';
+
+    }else{
+        obj.className="fundo4";
+    }
+
+    }
+    --
+    </script>
+</head>
+<body id="body" class="fundo">
+    <a href="#" type="submit" onclick="trocar();">Vermelho</a>
+    <a href="#" type="submit" onclick="trocar1();">Verde</a>
+    <a href="#" type="submit" onclick="trocar2();">Azul</a>
+    <a href="#" type="submit" onclick="trocar3();">Amarelo</a>
+
+    
+</body>
+</html>
+</pre>
