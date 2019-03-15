@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+        <script type="text/javascript">
+            function esconder(id){
+                var cmd = document.getElementById(id);
+                if(cmd.style.visibility == "hidden"){
+                    cmd.style.visibility = "visible";
+                }else{
+                    cmd.style.visibility = "hidden";
+                }
+            }
+            </script>
+            <style type="text/css">
+            body{
+                margin: 20px;
+            }
+            .esconder {
+                background: #efefef;
+                border: 3px solid #000;
+                margin: 5px 0 0 0;
+                padding: 5px;
+                width: 500px;
+                top: 40px;
+                left: 20px;
+                position: absolute;
+                z-index: 3;
+            }
+            </style>
+    <body>
+        <a href="#" onclick="esconder('some');">clique aqui</a>
+
+        <div id="some" class="esconder" style="visibility: hidden;">
+            <i>Texto: </i>Ao clicar esse texto aparece
+        </div>
+    </body>
+</head>

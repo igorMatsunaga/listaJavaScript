@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Exercicio 6</title>
+	<style>
+		input{
+			padding: 10px;			
+		}
+	</style>
+	<script>
+		
+		function myFunction()
+		{
+			var str = document.getElementById('txtbox').value;
+			
+			var result = checkPalindrome(str);
+			alert('Insira sua Palavra "'+str +'" e "'+result+'"');
+		}
+		
+		function checkPalindrome(str)
+		{
+			var orignalStr;
+			 
+			str = str.toLowerCase();
+			
+			orignalStr = str;
+			
+			str = str.split(''); 
+			str = str.reverse(); 
+			str = str.join('');
+			
+			var reverseStr = str;
+			
+			
+			if(orignalStr == reverseStr){
+				return 'Palindrome'; 
+			}else{
+				return 'Não é Palindrome';
+			}
+		}
+	</script>
+</head>
+<body>
+		<input type="text" id="txtbox" placeholder="Insira a Palavra" />
+		<input type="button" onclick="myFunction()" value="Checar Palíndrome" />
+	</form>
+</body>
+</html>

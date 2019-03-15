@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Exercicio 8</title>
+
+<body>
+    <h1 style="font-family:Comic Sans Ms; text-align:center;font-size:50pt; color:black;">
+        Exercicio 8
+    </h1>
+
+    <script language="javascript">
+        function habilitacao() {
+            if (document.getElementById('radio4').checked == true) {
+                document.getElementById('cpf').disabled = false;
+                document.getElementById('nascimento').disabled = false;
+
+            }
+            if (document.getElementById('radio4').checked == false) {
+                document.getElementById('cpf').disabled = true;
+                document.getElementById('nascimento').disabled = true;
+
+
+            }
+            if (document.getElementById('radio').checked == true) {
+                document.getElementById('cnpj').disabled = false;
+
+            }
+            if (document.getElementById('radio').checked == false) {
+                document.getElementById('cnpj').disabled = true;
+
+            }
+        }
+    </script>
+
+    Nome: <input type="text" id="nome" /></br></br>
+
+    <label class="radio-inline">
+        <label for="radio4" class="radio-inline">
+            <input type="radio" name="optionsRadiosInline" id="radio4" onClick="habilitacao()" value="option4">Fisica
+        </label>
+
+    <label class="radio-inline">
+        <label for="radio" class="radio-inline">
+             <input type="radio" name="optionsRadiosInline" id="radio" onClick="habilitacao()" value="option4">Juridica
+        </label>
+
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="cpf" placeholder="CPF" disabled>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="cnpj" placeholder="CNPJ" disabled>
+            </div>
+
+            <div class="form-group">
+                    <input type="date" class="form-control" id="nascimento" placeholder="Data de Nascimento" disabled>
+                </div>
+
+            Endereço: <input type="text" id="endereco" /></br></br>
+            Cep: <input type="number" id="cep" /></br></br>
+            Telefone: <input type="text" id="telefone" /></br></br>
+            Email: <input type="text" id="email" /></br></br>
+
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
+
+</body>
+</head>

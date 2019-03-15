@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Exercicio 7</title>
+
+    <h1 style="font-family:Comic Sans Ms; text-align:center;font-size:50pt; color:black;">
+            Exercicio 7 
+            </h1>
+       
+            <script language="javascript">
+            function inverte(){
+                var str = document.nomes.nome.value;
+                var str1 = document.nomes.nome1.value;
+                var str2 = document.nomes.nome2.value;
+                var str3 = document.nomes.nome3.value;
+                var str4 = document.nomes.nome4.value;
+
+                var inv = [str, str1, str2, str3, str4];
+
+                inv.reverse();
+                if(inv == null){
+                    alert('dados vazios');
+                }else{
+                    alert(inv);
+                }
+            }    
+                   
+            </script>
+    <body>
+            <form name="nomes">
+                    nome: <input type="text" id="nome"/>
+                    nome1: <input type="text" id="nome1"/>
+                    nome2: <input type="text" id="nome2"/>
+                    nome3: <input type="text" id="nome3"/>
+                    nome4: <input type="text" id="nome4"/>
+    
+                    <input type="button" onclick="inverte()" value="Inverter"/>
+                    <input type="reset" value="Cancelar"/>
+            </form>        
+    
+    </body>
+</head>
